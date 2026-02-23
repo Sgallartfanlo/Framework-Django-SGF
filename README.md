@@ -1,5 +1,4 @@
 
-````markdown
 # Projecte Django - Jugadors del Barça
 
 Aquest projecte és una aplicació web desenvolupada amb **Django** per gestionar informació sobre jugadors del FC Barcelona i els títols que han guanyat.
