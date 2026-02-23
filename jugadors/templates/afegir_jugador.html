@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if form.instance.pk %}Editar{% else %}Afegir{% endif %} jugador</title>
+
+    <!-- Carregar el tag static per poder utilitzar els arxius estàtics -->
+    {% load static %}
+
+    <!-- Enllaç al fitxer CSS personalitzat -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- Enllaç a la CDN de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>{% if form.instance.pk %}Editar{% else %}Afegir{% endif %} jugador</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="mb-3">
+        {{ form.as_p }}
+    </div>
+    <button type="submit" class="btn btn-primary">
+        {% if form.instance.pk %}Guardar canvis{% else %}Afegir{% endif %}
+    </button>
+</form>
+
+<a class="btn btn-secondary mt-3" href="{% url 'llista_jugadors' %}">Tornar</a>
+<body>
+</html>

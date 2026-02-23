@@ -1,0 +1,47 @@
+/* Estils generals per al projecte */
+
+/* Fons i color de text global */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrar títols */
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+/* Llistes de jugadors */
+.list-group-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Estils per als botons */
+.btn {
+    margin-top: 10px;
+}
+
+/* Estil per als botons secundaris */
+.btn-secondary {
+    margin-top: 20px;
+}
+
+/* Estil per als formularis */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Afegir marges als elements */
+.mb-3 {
+    margin-bottom: 15px;
+}
+
+/* Estils per als títols dins de les llistes */
+h4 span {
+    font-weight: bold;
+}
